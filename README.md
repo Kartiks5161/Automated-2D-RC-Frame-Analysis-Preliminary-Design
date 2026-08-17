@@ -10,19 +10,19 @@ Technology used: Python, NumPy, Tkinter, Pillow (PIL), ReportLab, and OpenPyXL.
 
 Undeformed frame:
 
-![Undeformed frame](docs/sample_undeformed_frame.png)
+![Undeformed frame](sample_undeformed_frame.png)
 
 Deformed shape:
 
-![Deformed shape](docs/sample_deformed_shape.png)
+![Deformed shape](sample_deformed_shape.png)
 
 Beam shear force diagram:
 
-![Beam SFD](docs/sample_beam_sfd.png)
+![Beam SFD](sample_beam_sfd.png)
 
 Beam bending moment diagram:
 
-![Beam BMD](docs/sample_beam_bmd.png)
+![Beam BMD](sample_beam_bmd.png)
 
 ## What The Tool Does
 
