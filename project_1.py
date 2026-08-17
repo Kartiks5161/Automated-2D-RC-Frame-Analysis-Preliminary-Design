@@ -1,5 +1,5 @@
 """
-Project 1: Automated RC Building Analysis and Preliminary Design Tool
+Project 1: Automated 2D RC Frame Analysis & Preliminary Design
 
 This program generates and analyses a 2D multi-storey reinforced-concrete
 moment frame using the matrix stiffness method. It produces:
@@ -162,7 +162,7 @@ def ask_text(prompt: str, default: str) -> str:
 
 
 def read_inputs_interactively() -> FrameInput:
-    print("\nAutomated RC Building Analysis and Preliminary Design Tool")
+    print("\nAutomated 2D RC Frame Analysis & Preliminary Design")
     print("Press Enter to accept the default value shown in brackets.\n")
     data = FrameInput()
     data.storeys = ask_int("Number of storeys", data.storeys)
@@ -1050,7 +1050,7 @@ def write_excel_report(result: AnalysisResult, image_paths: Iterable[Path], outp
     ws = wb.active
     ws.title = "Summary"
     title_fill = PatternFill("solid", fgColor="1F4E78")
-    ws["A1"] = "Automated RC Building Analysis and Preliminary Design Tool"
+    ws["A1"] = "Automated 2D RC Frame Analysis & Preliminary Design"
     ws["A1"].font = Font(bold=True, color="FFFFFF", size=14)
     ws["A1"].fill = title_fill
     ws.append([])
@@ -1136,7 +1136,7 @@ def write_pdf_report(result: AnalysisResult, image_paths: Iterable[Path], output
     doc = SimpleDocTemplate(str(path), pagesize=landscape(A4), rightMargin=14 * mm, leftMargin=14 * mm, topMargin=12 * mm, bottomMargin=12 * mm)
     styles = getSampleStyleSheet()
     story = [
-        Paragraph("Automated RC Building Analysis and Preliminary Design Tool", styles["Title"]),
+        Paragraph("Automated 2D RC Frame Analysis & Preliminary Design", styles["Title"]),
         Spacer(1, 8),
         Paragraph(
             "This report presents a 2D RC frame analysis using the matrix stiffness method. "
@@ -1348,13 +1348,13 @@ def parse_args() -> argparse.Namespace:
 def launch_gui() -> None:
     defaults = FrameInput()
     root = tk.Tk()
-    root.title("RC Frame Analysis and Preliminary Design Tool")
+    root.title("Automated 2D RC Frame Analysis & Preliminary Design")
     root.geometry("760x640")
     root.minsize(720, 600)
 
     main = ttk.Frame(root, padding=16)
     main.pack(fill="both", expand=True)
-    title = ttk.Label(main, text="RC Frame Analysis and Preliminary Design Tool", font=("Segoe UI", 16, "bold"))
+    title = ttk.Label(main, text="Automated 2D RC Frame Analysis & Preliminary Design", font=("Segoe UI", 16, "bold"))
     title.grid(row=0, column=0, columnspan=4, sticky="w", pady=(0, 12))
 
     fields = [

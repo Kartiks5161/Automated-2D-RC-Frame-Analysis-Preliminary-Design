@@ -1,26 +1,28 @@
-# Automated RC Building Analysis and Preliminary Design Tool
+# Automated 2D RC Frame Analysis & Preliminary Design
 
 A Python-based desktop tool for generating, analysing, visualising, and preliminarily checking a 2D multi-storey reinforced-concrete building frame.
 
 The project demonstrates the matrix stiffness method, structural modelling, load application, member-force recovery, IS-code-aware preliminary checks, and automated reporting.
 
+Technology used: Python, NumPy, Tkinter, Pillow (PIL), ReportLab, and OpenPyXL.
+
 ## Sample Outputs
 
 Undeformed frame:
 
-![Undeformed frame](sample_undeformed_frame.png)
+![Undeformed frame](docs/sample_undeformed_frame.png)
 
 Deformed shape:
 
-![Deformed shape](sample_deformed_shape.png)
+![Deformed shape](docs/sample_deformed_shape.png)
 
 Beam shear force diagram:
 
-![Beam SFD](sample_beam_sfd.png)
+![Beam SFD](docs/sample_beam_sfd.png)
 
 Beam bending moment diagram:
 
-![Beam BMD](sample_beam_bmd.png)
+![Beam BMD](docs/sample_beam_bmd.png)
 
 ## What The Tool Does
 
